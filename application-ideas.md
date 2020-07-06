@@ -1,0 +1,19 @@
+# Applications I could develop if time permits
+
+## Bundesordner
+An application that keeps track of your Personal or Business files in the digital realm. Save Files as content addressed blobs and Order them by a folder structure. Files are indexed by date, tags and People connected to them.
+- Folder
+  - Has path and not just name
+    - Path is translated into structure in frontend
+  - Limited to make it not too complex (4 layers?)
+  - Tags to find things
+  - Date to refine search
+  - One Folder has many files
+  - creation, and modification (last time something got added) date
+  - Undeleteable attribute Which archives folders
+    - Archived folders are hidden
+  - Retention Point to get rid of old stuff
+- Files
+  - creation date
+  - has many blobs (versions)
+  - 
