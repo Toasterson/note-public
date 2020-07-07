@@ -13,7 +13,7 @@ An application that keeps track of your Personal or Business files in the digita
   - Undeleteable attribute Which archives folders
     - Archived folders are hidden
   - Retention Point to get rid of old stuff
-  - Holds default properties for all filed within
+  - Holds default properties for all files within
   - Can prevent files from having own properties
 - Files
   - creation date
