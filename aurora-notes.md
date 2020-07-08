@@ -19,6 +19,8 @@
 - Termios fixes upstream in https://github.com/moby/term
 - Refactor utilities (untie things)
 # Functions
+- #build
+  - [Makisu](https://github.com/uber/makisu) builder from uber with nice features to maybe add
 - #imgunpack
   - no binary
   - Unpack OCI image into runtime spec compatibe ZFS image
