@@ -22,7 +22,6 @@
 - #build
   - [Makisu](https://github.com/uber/makisu) builder from uber with nice features to maybe add
 - #imgunpack
-  - no binary
   - Unpack OCI image into runtime spec compatibe ZFS image
   - Including sub volumes if present
   - Interfaces with OCI layout and ZFS images
@@ -30,13 +29,13 @@
   - Download image from registry to OCI directory
   - Interfaces with OCI file spec and registry
 - #imgpack
-  - Counter to imgunpack (no binary)
+  - Counter to imgunpack
   - make OCI directory from ZFS Image
 - #imgpush
-  - Counter to imgget (no binary)
+  - Counter to imgget
   - push images to a registry
 - #imgconvert
-  - convert images between formats 
+  - convert images between formats
   - Ingest SmartOS images
 - #buildprep
   - prepare sources or unpack a root directory to a container dataset
@@ -52,19 +51,57 @@
   - define services for smf and podinit
   - extract source archives
   - save actions.json with custom actions an image could execute
-- podadm
-  - manage containers and pods run, start, stop, create, delete, update
 - imageadm
   - Client utility for several host functions
   - [[aurora-notes.md#imgget]]
   - [[aurora-notes.md#imgunpack]]
-  - [[aurora-notes.md#build]]
   - [[aurora-notes.md#imgconvert]]
+  - [[aurora-notes.md#imgpush]]
+  - [[aurora-notes.md#imgpack]]
+- bldadm
+  - utility to run container builds
+  - [[aurora-notes.md#build]]
+  - [[aurora-notes.md#buildprep]]
+- bldcfg
+  - utility to configure builds
+  - validate and write instructions to build containers 
+  - instructions can be commited to git
+  - manage master instruction files (files which includes multiple other instructions to build a complete infrastructure)
+  - convert docker-compose files
+  - provide semantic versioning support into built images
+  - write bill of materials into images
 - podinit
   - use lofs mounted config.json (readonly) to know which binary to start
   - work as init type service indide the zone
   - config map (key value -> toml, yaml, json)?
   - provide interface to execute actions
+- nodeadm
+  - Manage nodes in a cluster
+  - set nodename
+  - set node maintenance status (In Production, Maintenance Schedulded, Preparing for Maintenance, In Maintenance, Integrating into Production)
+  - schedule maintenance date
+  - deprioritize node
+  - join node to cluster/remove from cluster
+  - bootstrap new cluster with this node as regeant
+    - in existing cloud
+    - without cloud (cloud must then be boostrapped with cloudadm)
+  - update the nodes packages
+- cloudadm
+  - bootstrap a new cloud
+    - cloud login (OpenDJ oder ähnliches)
+    - management network layer
+    - integrate cluster into central login
+    - add provider tenant and admin account
+    - launch cloud operator and let it handle things from there
+  - manage tenants (add, change, remove, disable)
+    - each with their own network
+      - either provider by resource provider (Do, AWS, Azure), or made by bare-metal
+  - manage regions
+  - manage cloud functions like FaaS, PaaS and individual SaaS services
+  - destroy clusters
+  - manage tentant IP pools
+- podadm
+  - manage containers and pods start, stop, create, delete, update
 # Coding notes
 - Daemonizing 
   - https://ieftimov.com/post/four-steps-daemonize-your-golang-programs/
