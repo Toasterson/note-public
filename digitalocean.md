@@ -1,0 +1,3 @@
+- Prebuilt image https://sysmgr.org/disks/omnios-151034h-5.raw.gz
+- Build script https://github.com/jclulow/kayak/blob/digitalocean/build/digitalocean
+- Metadata agent https://github.com/jclulow/illumos-metadata-agent/
