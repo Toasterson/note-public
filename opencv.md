@@ -1,0 +1,9 @@
+- [Example1](https://github.com/beast/android-opencv-scan-doc)
+- [Example2](https://github.com/vulovicv23/opencv-documentscanner-android)
+- [Tutorial with Python](https://www.pyimagesearch.com/2014/09/01/build-kick-ass-mobile-document-scanner-just-5-minutes/)
+- [Edge detection python sample](https://stackoverflow.com/questions/42056592/how-to-detect-document-from-a-picture-in-opencv)
+- [Code in WeTransfer](https://github.com/WeTransfer/WeScan/pull/41)
+- [Invoice Scanning Tutorial IOS](https://hochgatterer.me/blog/invoice-scanning/)
+- [React Native OpenCV Integration](https://brainhub.eu/blog/opencv-react-native-image-processing/)
+- [OpenCV Homepage](https://opencv.org/)
+- 
