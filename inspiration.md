@@ -1,0 +1,1 @@
+- [Never Quit if...](https://www.saastr.com/never-quit-if/)
