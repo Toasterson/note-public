@@ -9,6 +9,8 @@
 - Docker Term needs to be pointed to moby/term until it lands in kubernetes to version in kubernetes
   - ~/workspace/go/nomad/vendor/github.com/docker/docker
   - Termios fixes upstream in https://github.com/moby/term
+- Namespaces as a Service https://www.k8spin.cloud/oss-projects
+- 5 things one overlooks while deploying to kubernetes https://medium.com/gumgum-tech/5-things-we-overlooked-when-putting-our-first-app-on-kubernetes-58583c1783e4
 - #CRI notes
   - https://github.com/cri-o/ocicni
   - https://github.com/kubernetes/cri-api
