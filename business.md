@@ -1,0 +1,1 @@
+- [10 prospects that are wasting your time and how to spot them](https://blog.close.com/10-prospects-that-are-wasting-your-time-and-how-to-spot-them/)
