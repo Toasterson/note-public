@@ -46,7 +46,7 @@
   - convert container into ZFS Image
   - generate metadata for the image (no runtime)
 # CLI utilities
-- runz to only execute runtime spec
+- containerexec to only execute runtime spec
   - Create Zone and run it
   - convert OCI spec to zone
 - buildhelper
