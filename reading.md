@@ -1,0 +1,1 @@
+- https://www.thedrive.com/tech/26399/magical-mystery-plant-tour-genchi-genbutsu-in-toyota-city
