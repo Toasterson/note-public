@@ -14,3 +14,6 @@
 `cat /var/pkg/publisher/openindiana.org/catalog/catalog.dependency.C | jq '.["openindiana.org"]."consolidation/userland/userland-incorporation" | length'`
 # Get amount of actions for package
 `cat /var/pkg/publisher/openindiana.org/catalog/catalog.dependency.C | jq '.["openindiana.org"]."consolidation/userland/userland-incorporation"[].actions | length'`
+
+# Links
+- [Image Packaging System Description](https://docs.oracle.com/cd/E23824_01/html/E21796/pkg-5.html)
